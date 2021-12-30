@@ -1,0 +1,86 @@
+    * {
+        box-sizing: border-box;
+    }
+    
+    body {
+        font-family: sans-serif;
+        background-color: #fff389;
+        margin: 0;
+        padding: 0;
+        outline: none;
+    }
+    
+    .container {
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .calculator {
+        background-image: url("../img/bg2.jpg");
+        background-repeat: no-repeat;
+        background-size: cover;
+        padding: 15px;
+        border-radius: 30px;
+        box-shadow: inset 5px 5px 12px #ffffff, 5px 5px 12px rgba(0, 0, 0, 0.16);
+        display: grid;
+        grid-template-columns: repeat(4, 68px);
+    }
+    
+    input {
+        grid-column: span 4;
+        height: 70px;
+        width: 260px;
+        background-color: #fff387;
+        /* background-color: #fff5a18a; */
+        /* box-shadow: -5px -5px 12px #fffce0db, 5px 5px 12px rgba(0, 0, 0, 0.16); */
+        box-shadow: inset -5px -5px 12px #fef5a8, inset 5px 5px 12px rgba(0, 0, 0, .16);
+        border: none;
+        border-radius: 30px;
+        color: rgb(70, 70, 70);
+        font-size: 35px;
+        font-weight: 600;
+        text-align: end;
+        margin: auto;
+        margin-top: 40px;
+        margin-bottom: 30px;
+        padding: 20px;
+    }
+    
+    button {
+        color: #6d2004;
+        height: 48px;
+        width: 48px;
+        background-color: #ffef6c8a;
+        box-shadow: -5px -5px 12px #fffce0db, 5px 5px 12px rgba(0, 0, 0, 0.16);
+        border: none;
+        border-radius: 50%;
+        margin: 8px;
+        font-size: 16px;
+        font-weight: 600;
+    }
+    
+    .equal {
+        color: #6d2004;
+        font-weight: 600;
+        width: 115px;
+        border-radius: 40px;
+        background-color: #ffef6c8a;
+        box-shadow: -5px -5px 12px #fffce0db, 5px 5px 12px rgba(0, 0, 0, 0.16);
+        cursor: pointer;
+    }
+    
+    button:hover {
+        cursor: pointer;
+    }
+    
+    button:active {
+        font-size: 1rem;
+        transform: scale(.9);
+    }
+    
+    .equal:active {
+        font-size: 1rem;
+        transform: scale(.9);
+    }
